@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LMC 2700 A Frame Assignment - Lija Chang</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Background -->
+      <a-sky color="#B4BCBF"></a-sky> 
 
+      <!-- Picture frame -->
+      <a-box color="#FFFFFF" rotation="0 90 0" position="-1.78 1.5 -6.9" scale= "4 4.5 .2"></a-box>
+      <a-box color="#FFFFFF" rotation="0 90 0" position="1.78 1.5 -6.9" scale= "4 4.5 .2"></a-box>
+      <a-box color="#FFFFFF" rotation="90 0 0" position="0 3.98 -7.45" scale= "3.99 4.5 .2"></a-box>
+      <a-box color="#FFFFFF" rotation="90 0 0" position="0 -1 -7.45" scale= "3.99 4.5 .2"></a-box>
+      
+      <!-- Background rectangles -->
+      <a-box color="#ECECEA" position="0 2.5 -5" scale="3 2 1"></a-box>
+      <a-box color="#252523" position="0 .5 -5" scale="3 2 1"></a-box>
+
+      <!-- Middleground triangles -->
+      <a-tetrahedron color="#D9AB5D" rotation="90 45 0" position="0 2.086 -4" scale="1.3 1.3 1"></a-tetrahedron>
+      <a-tetrahedron color="#424244" rotation="0 45 0" position="0 .93 -4" scale="1.3 1 1.3"></a-tetrahedron>
+      
+      <!-- Foreground triangles -->
+      <a-tetrahedron color="#ECECEA" rotation="90 45 0" position="0 1.82 -3" scale=".5 .5 .5"></a-tetrahedron>
+      <a-tetrahedron color="#D9AB5D" rotation="0 45 0" position="0 1.243 -3" scale=".5 .5 .5"> </a-tetrahedron>
+    </a-scene>
+  </body>
+</html>
