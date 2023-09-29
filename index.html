@@ -8,43 +8,133 @@
   </head>
   <body>
     <a-scene>
-        <a-sky color="#B4BCBF"></a-sky>
+      <assets>
+        <a-asset-item
+          id="triangle-obj"
+          src="https://cdn.glitch.global/d846eeab-cf9a-43c2-a361-d05cf19be69a/triangle.glb?v=1695922160474"
+        ></a-asset-item>
+      </assets>
+        
+      <a-sky color="#B4BCBF"></a-sky>
 
-        <!-- Connor's Part -->
-        <a-entity position="2 1.6 -3" rotation="90 90 90">
 
-          <!-- Photo Frame -->
-          <a-box color="#FFFFFF" position="0 -.35 -1.55" depth=".1" height=".2" width="2"></a-box>
-          <a-box color="#FFFFFF" position="0 -.35 1.55" depth=".1" height=".2" width="2"></a-box>
-          <a-box color="#FFFFFF" position="1 -.35 0" depth="3.2" height=".2" width=".1"></a-box>
-          <a-box color="#FFFFFF" position="-1 -.35 0" depth="3.2" height=".2" width=".1"></a-box>
-          
-          <!-- Background Rectangles -->
-          <a-box color="#ECECEA" position="0 -.4 -.8" depth="1.6" height=".1" width="2"></a-box>
-          <a-box color="#252523" position="0 -.4 .8" depth="1.6" height=".1" width="2"></a-box>
+      <!-- Photo Frame -->
+      <a-entity position="0 1.6 -3" rotation="90 90 90">
+        <a-box color="#FFFFFF" position="0 -.35 -1.55" depth=".1" height=".2" width="2"></a-box>
+        <a-box color="#FFFFFF" position="0 -.35 1.55" depth=".1" height=".2" width="2"></a-box>
+        <a-box color="#FFFFFF" position="1 -.35 0" depth="3.2" height=".2" width=".1"></a-box>
+        <a-box color="#FFFFFF" position="-1 -.35 0" depth="3.2" height=".2" width=".1"></a-box>
+      </a-entity>
 
-          <!-- Cylinders -->
-          <a-cylinder radius="0.8" height="0.097" position="0 -.3 0" color="#ECECEA" theta-start="90" theta-length="180" side="double"></a-cylinder>
-          <a-cylinder radius="0.8" height="0.097" position="0 -.3 0" color="#252523" theta-start="270" theta-length="180" side="double"></a-cylinder>
-          <a-cylinder radius="0.77" height="0.1" position="0 -.3 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.81" height="0.095" position="0 -.3 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.81" height="0.096" position="0 -.3 0" color="#D9AB5D" theta-start="270" theta-length="180" side="double"></a-cylinder>
-          
-          <a-cylinder radius="0.7" height="0.1" position="0 -.2 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.71" height="0.095" position="0 -.2 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.6" height="0.1" position="0 -.1 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.61" height="0.095" position="0 -.1 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.5" height="0.1" position="0 0 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.51" height="0.095" position="0 0 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.4" height="0.1" position="0 0.1 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.41" height="0.095" position="0 0.1 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.3" height="0.1" position="0 0.2 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.31" height="0.095" position="0 0.2 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.2" height="0.1" position="0 0.3 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.21" height="0.095" position="0 0.3 0" color="#252523"></a-cylinder>
-          <a-cylinder radius="0.1" height="0.1" position="0 0.4 0" color="#D9AB5D"></a-cylinder>
-          <a-cylinder radius="0.11" height="0.095" position="0 0.4 0" color="#252523"></a-cylinder>
-        </a-entity>
+      
+      <!-- Cho's Part -->
+      <a-entity scale=".4 .4 .4" position="0 .8 -1.75">
+        <a-box
+          position="0 4 -5"
+          rotation="0 0 0"
+          color="#252523"
+          scale="5 4 2"
+        ></a-box>
+
+        <a-box
+          position="0 0 -5"
+          rotation="0 0 0"
+          color="#ECECEA"
+          scale="5 4 2"
+        ></a-box>
+
+        <a-tetrahedron
+          color="#D9AB5D"
+          radius="5"
+          position="0 2.6 -4"
+          rotation="0 45 0"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="0.81 3.75 -4"
+          rotation="0 45 0"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="-0.81 3.75 -4"
+          rotation="0 45 0"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#D9AB5D"
+          radius="5"
+          position="0 1.4 -4"
+          rotation="90 90 45"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="0.81 0.25 -4"
+          rotation="90 90 45"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="-0.81 0.25 -4"
+          rotation="90 90 45"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+
+        <a-entity
+          gltf-model="triangle-obj"
+          scale="1 1 1"
+          position="0 2 -3"
+        ></a-entity>
+      </a-entity>
+      
+      
+      <!-- Connor's Part -->
+      <a-entity position="3 1.6 -3" rotation="90 90 90">
+
+        <!-- Photo Frame -->
+        <a-box color="#FFFFFF" position="0 -.35 -1.55" depth=".1" height=".2" width="2"></a-box>
+        <a-box color="#FFFFFF" position="0 -.35 1.55" depth=".1" height=".2" width="2"></a-box>
+        <a-box color="#FFFFFF" position="1 -.35 0" depth="3.2" height=".2" width=".1"></a-box>
+        <a-box color="#FFFFFF" position="-1 -.35 0" depth="3.2" height=".2" width=".1"></a-box>
+        
+        <!-- Background Rectangles -->
+        <a-box color="#ECECEA" position="0 -.4 -.8" depth="1.6" height=".1" width="2"></a-box>
+        <a-box color="#252523" position="0 -.4 .8" depth="1.6" height=".1" width="2"></a-box>
+
+        <!-- Cylinders -->
+        <a-cylinder radius="0.8" height="0.097" position="0 -.3 0" color="#ECECEA" theta-start="90" theta-length="180" side="double"></a-cylinder>
+        <a-cylinder radius="0.8" height="0.097" position="0 -.3 0" color="#252523" theta-start="270" theta-length="180" side="double"></a-cylinder>
+        <a-cylinder radius="0.77" height="0.1" position="0 -.3 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.81" height="0.095" position="0 -.3 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.81" height="0.096" position="0 -.3 0" color="#D9AB5D" theta-start="270" theta-length="180" side="double"></a-cylinder>
+        
+        <a-cylinder radius="0.7" height="0.1" position="0 -.2 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.71" height="0.095" position="0 -.2 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.6" height="0.1" position="0 -.1 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.61" height="0.095" position="0 -.1 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.5" height="0.1" position="0 0 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.51" height="0.095" position="0 0 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.4" height="0.1" position="0 0.1 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.41" height="0.095" position="0 0.1 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.3" height="0.1" position="0 0.2 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.31" height="0.095" position="0 0.2 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.2" height="0.1" position="0 0.3 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.21" height="0.095" position="0 0.3 0" color="#252523"></a-cylinder>
+        <a-cylinder radius="0.1" height="0.1" position="0 0.4 0" color="#D9AB5D"></a-cylinder>
+        <a-cylinder radius="0.11" height="0.095" position="0 0.4 0" color="#252523"></a-cylinder>
+      </a-entity>
       <a-camera>
         <a-cursor color="#FAFAFA"></a-cursor>
       </a-camera>
