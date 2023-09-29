@@ -1,1 +1,89 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <assets>
+        <a-asset-item
+          id="triangle-obj"
+          src="https://cdn.glitch.global/d846eeab-cf9a-43c2-a361-d05cf19be69a/triangle.glb?v=1695922160474"
+        ></a-asset-item>
+      </assets>
+      <a-entity>
+        <a-box
+          position="0 4 -5"
+          rotation="0 0 0"
+          color="#252523"
+          scale="6 4 2"
+        ></a-box>
+
+        <a-box
+          position="0 0 -5"
+          rotation="0 0 0"
+          color="#ECECEA"
+          scale="6 4 2"
+        ></a-box>
+
+        <a-tetrahedron
+          color="#D9AB5D"
+          radius="5"
+          position="0 2.6 -4"
+          rotation="0 45 0"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="0.81 3.75 -4"
+          rotation="0 45 0"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="-0.81 3.75 -4"
+          rotation="0 45 0"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#D9AB5D"
+          radius="5"
+          position="0 1.4 -4"
+          rotation="90 90 45"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="0.81 0.25 -4"
+          rotation="90 90 45"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+        <a-tetrahedron
+          color="#424244"
+          radius="5"
+          position="-0.81 0.25 -4"
+          rotation="90 90 45"
+          scale="0.2 0.2 0.2"
+        ></a-tetrahedron>
+        
+
+        <a-entity
+          gltf-model="triangle-obj"
+          scale="1 1 1"
+          position="0 2 -3"
+        ></a-entity>
+      </a-entity>
+
+      <a-sky color="#B4BCBF"></a-sky>
+    </a-scene>
+  </body>
+</html>
